@@ -17,6 +17,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/aquarios/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/aquarios/config/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, vendor/aquarios/config/utils.mk)
 
 # Inherit from natrium device
 $(call inherit-product, device/xiaomi/natrium/device.mk)

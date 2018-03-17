@@ -1,11 +1,9 @@
-$(call inherit-product, device/xiaomi/natrium/full_natrium.mk)
+# Inherit some common AquariOS stuff.
+$(call inherit-product, vendor/aquarios/products/aquarios_phone.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTENDED_BUILD_TYPE=OFFICIAL
 
-PRODUCT_NAME := aosp_natrium
+PRODUCT_NAME := natrium
 PRODUCT_DEVICE := natrium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 5s Plus
